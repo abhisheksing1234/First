@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: white;
+}
+ul{
+    margin-top: 40vh;
+    margin-left: 35%;
+    display: flex;
+}
+li{
+    font-size: 50px;
+    list-style: none;
+}
+ul:hover li{
+    animation: ani 8s linear forwards;
+}
+@keyframes ani{
+    0%{
+        transform:translate(0px,0px)
+    }
+    50%{
+        transform: translate(300px,250px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+
+ul li:nth-child(8){
+    animation-delay: 0s;
+}
+ul li:nth-child(7){
+    animation-delay: 1s;
+}
+ul li:nth-child(6){
+    animation-delay: 2s;
+}
+ul li:nth-child(5){
+    animation-delay: 3s;
+}
+ul li:nth-child(4){
+    animation-delay: 4s;
+}
+ul li:nth-child(3){
+    animation-delay: 5s;
+}
+ul li:nth-child(2){
+    animation-delay: 6s;
+}
+ul li:nth-child(1){
+    animation-delay: 7s;
+}

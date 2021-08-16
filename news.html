@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="news1.css">
+    <script src="./jquery2.min.js"></script>
+
+    <script>
+        function name1(){
+            x=prompt("enter your name")
+
+            document.getElementById('a').innerHTML=x
+        }
+
+        $(document).ready(function(){
+            $('button').click(function(){
+                $(this).hide()
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <button onclick="name1()">Click here</button>
+    <div>
+        <center>
+        <h1>Abhishek Institute</h1><br><br>
+
+        <p>This is to certify that Mr./Ms. <b><span id="a"></span> </b>has successfully completed .....</p>
+        
+    </center>
+    </div>
+</body>
+</html>
